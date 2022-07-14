@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yassi\\source\\repos\\coolblue-assesment\\coolblue-assesment.csproj": {}
+    "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assesment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yassi\\source\\repos\\coolblue-assesment\\coolblue-assesment.csproj": {
+    "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assesment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yassi\\source\\repos\\coolblue-assesment\\coolblue-assesment.csproj",
+        "projectUniqueName": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assesment.csproj",
         "projectName": "coolblue-assesment",
-        "projectPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assesment\\coolblue-assesment.csproj",
+        "projectPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assesment.csproj",
         "packagesPath": "C:\\Users\\yassi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assesment\\obj\\",
+        "outputPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

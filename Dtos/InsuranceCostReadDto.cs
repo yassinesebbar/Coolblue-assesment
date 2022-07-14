@@ -12,7 +12,7 @@ namespace coolblue_assesment.Dtos
         public int productId { get; set; }
 
         [Required]
-        public string productName  {get; set;}
+        public string? productName  {get; set;}
 
         [Required]
         public decimal salesPrice {get; set;}

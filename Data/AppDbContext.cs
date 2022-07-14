@@ -14,8 +14,8 @@ namespace coolblue_assesment.Data
 
         }
 
-        public DbSet<ProductType> ProductType => Set<ProductType>();
-        public DbSet<Product> Product => Set<Product>();
+        public DbSet<ProductType> ProductTypes => Set<ProductType>();
+        public DbSet<Product> Products => Set<Product>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

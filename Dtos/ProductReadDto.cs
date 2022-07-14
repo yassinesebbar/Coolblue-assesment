@@ -9,15 +9,15 @@ namespace coolblue_assesment.Dtos
     public class ProductReadDto
     {
         [Key]
-        private int id { get; set; }
+        public int id { get; set; }
 
         [Required]
-        private string name { get; set; }
+        public string? name { get; set; }
 
         [Required]
-        private decimal salesPrice { get; set; }
+        public decimal salesPrice { get; set; }
 
         [Required]
-        private int ProductTypeId {get; set;}
+        public int ProductTypeId {get; set;}
     }
 }

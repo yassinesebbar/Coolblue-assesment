@@ -9,14 +9,14 @@ namespace coolblue_assesment.Models
     public class ProductType
     {
         [Key]
-        private int id { get; set; }
+        public int id { get; set; }
 
         [Required]
-        private string name { get; set; }
+        public string? name { get; set; }
 
         [Required]
-        private bool canBeInsured { get; set; }
+        public bool canBeInsured { get; set; }
 
-        public List<Product> Products {get; set;}
+        public List<Product>? Products {get; set;}
     }
 }

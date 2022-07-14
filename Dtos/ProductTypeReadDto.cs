@@ -10,8 +10,10 @@ namespace coolblue_assesment.Dtos
      {
         [Key]
         private int id { get; set; }
+
         [Required]
         private string name { get; set; }
+        
         [Required]
         private bool canBeInsured { get; set; }
     }

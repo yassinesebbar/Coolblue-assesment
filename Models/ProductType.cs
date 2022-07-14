@@ -13,8 +13,10 @@ namespace coolblue_assesment.Models
 
         [Required]
         private string name { get; set; }
-        
+
         [Required]
         private bool canBeInsured { get; set; }
+
+        public List<Product> Products {get; set;}
     }
 }

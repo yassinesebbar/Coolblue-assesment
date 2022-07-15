@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "smD5J1BxXlsBSxyy0AHaW7H7CBKc6HkN0o9rATFcYyc94nhX458wtP2yT9xPlT8yiVhM0pweky9IbrLNVuCvRQ==",
+  "dgSpecHash": "LZXDOiMcZ/dqa0EnX02Z9HDB8J+AjyVzkGIBNUO4zq+0RmUEY1nXqstwn9vTxcyrEB8C/gxpPv0R9taBXzrttg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yassi\\source\\repos\\Coolblue\\CoolblueApi\\coolblue-assessment\\coolblue-assessment.csproj",
+  "projectFilePath": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assessment\\coolblue-assessment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yassi\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\yassi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

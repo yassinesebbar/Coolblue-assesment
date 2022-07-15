@@ -3248,11 +3248,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yassi\\source\\repos\\Coolblue\\CoolblueApi\\coolblue-assessment\\coolblue-assessment.csproj",
+      "projectUniqueName": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assessment\\coolblue-assessment.csproj",
       "projectName": "coolblue-assessment",
-      "projectPath": "C:\\Users\\yassi\\source\\repos\\Coolblue\\CoolblueApi\\coolblue-assessment\\coolblue-assessment.csproj",
+      "projectPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assessment\\coolblue-assessment.csproj",
       "packagesPath": "C:\\Users\\yassi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yassi\\source\\repos\\Coolblue\\CoolblueApi\\coolblue-assessment\\obj\\",
+      "outputPath": "C:\\Users\\yassi\\source\\repos\\coolblue-assessment\\coolblue-assessment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

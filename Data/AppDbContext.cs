@@ -19,9 +19,9 @@ namespace coolblue_assesment.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Product>()
-                .HasOne<ProductType>(p => p.ProductType)
-                .WithMany(p => p.Products);
+            modelBuilder.Entity<ProductType>()
+                .HasMany<Product>(p => p.Products)
+                .WithOne(p => p.ProductType);
         }
     }
 }

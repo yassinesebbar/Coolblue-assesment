@@ -51,6 +51,11 @@ namespace coolblue_assesment.Services
                 insuranceCost = 2000;
             }
 
+            if (productType.productTypeEnum == ProductTypeEnum.Laptops || productType.productTypeEnum == ProductTypeEnum.Smartphones)
+            {
+                insuranceCost += 500;
+            }
+
             return insuranceCost;
         }
     }

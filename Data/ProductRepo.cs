@@ -18,7 +18,7 @@ namespace coolblue_assesment.Data
 
         public  Product? GetProductById(int id)
         {
-            return  _context.Products.FirstOrDefault(p => p.id == id);
+            return  _context.Products.Include(p => p.ProductType).FirstOrDefault(p => p.id == id);
         }
     }
 }

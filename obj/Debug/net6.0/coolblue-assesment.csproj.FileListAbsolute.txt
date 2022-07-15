@@ -61,3 +61,5 @@ C:\Users\yassi\source\repos\coolblue-assessment\obj\Debug\net6.0\refint\coolblue
 C:\Users\yassi\source\repos\coolblue-assessment\obj\Debug\net6.0\coolblue-assesment.pdb
 C:\Users\yassi\source\repos\coolblue-assessment\obj\Debug\net6.0\coolblue-assesment.genruntimeconfig.cache
 C:\Users\yassi\source\repos\coolblue-assessment\obj\Debug\net6.0\ref\coolblue-assesment.dll
+C:\Users\yassi\source\repos\coolblue-assessment\bin\Debug\net6.0\Resources\products.json
+C:\Users\yassi\source\repos\coolblue-assessment\bin\Debug\net6.0\Resources\productTypes.json

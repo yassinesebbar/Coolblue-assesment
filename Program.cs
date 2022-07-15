@@ -76,4 +76,16 @@ app.MapGet("api/v1/getInsuranceCost",  (IInsuranceService service, int id) => {
     }
 });
 
+// I left this here to show i ran the bulkupdate. Not the nice way but i ran out of time
+// app.MapGet("bd7ca01ddbc2RunBulkUpdate",  (AppDbContext context) => {
+//     BulkImport bulkImport = new BulkImport(context);
+
+//     String productJsonFile = app.Environment.ContentRootPath + "/Resources/products.json";
+//     String productTypeJsonFile = app.Environment.ContentRootPath + "/Resources/productTypes.json";
+
+//     bulkImport.startBulkImport(productJsonFile, productTypeJsonFile);
+
+//     return Results.Ok("Has been run");
+// });
+
 app.Run();

@@ -4,58 +4,57 @@
 
 namespace coolblue_assesment.Migrations
 {
-    public partial class initialmigration : Migration
+    public partial class identity3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ProductType",
+                name: "ProductTypes",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    id = table.Column<int>(type: "int", nullable: false),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    canBeInsured = table.Column<bool>(type: "bit", nullable: false)
+                    canBeInsured = table.Column<bool>(type: "bit", nullable: false),
+                    productTypeEnum = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductType", x => x.id);
+                    table.PrimaryKey("PK_ProductTypes", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Product",
+                name: "Products",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    id = table.Column<int>(type: "int", nullable: false),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     salesPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ProductTypeid = table.Column<int>(type: "int", nullable: false)
+                    productTypeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Product", x => x.id);
+                    table.PrimaryKey("PK_Products", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Product_ProductType_ProductTypeid",
-                        column: x => x.ProductTypeid,
-                        principalTable: "ProductType",
+                        name: "FK_Products_ProductTypes_productTypeId",
+                        column: x => x.productTypeId,
+                        principalTable: "ProductTypes",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Product_ProductTypeid",
-                table: "Product",
-                column: "ProductTypeid");
+                name: "IX_Products_productTypeId",
+                table: "Products",
+                column: "productTypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Product");
+                name: "Products");
 
             migrationBuilder.DropTable(
-                name: "ProductType");
+                name: "ProductTypes");
         }
     }
 }

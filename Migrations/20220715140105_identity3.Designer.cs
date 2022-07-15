@@ -11,8 +11,8 @@ using coolblue_assesment.Data;
 namespace coolblue_assesment.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220714213822_initialmigration")]
-    partial class initialmigration
+    [Migration("20220715140105_identity3")]
+    partial class identity3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,35 +26,29 @@ namespace coolblue_assesment.Migrations
             modelBuilder.Entity("coolblue_assesment.Models.Product", b =>
                 {
                     b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
-
-                    b.Property<int>("ProductTypeid")
                         .HasColumnType("int");
 
                     b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("productTypeId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("salesPrice")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("id");
 
-                    b.HasIndex("ProductTypeid");
+                    b.HasIndex("productTypeId");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("coolblue_assesment.Models.ProductType", b =>
                 {
                     b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
                     b.Property<bool>("canBeInsured")
                         .HasColumnType("bit");
@@ -63,16 +57,19 @@ namespace coolblue_assesment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("productTypeEnum")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
 
-                    b.ToTable("ProductType");
+                    b.ToTable("ProductTypes");
                 });
 
             modelBuilder.Entity("coolblue_assesment.Models.Product", b =>
                 {
                     b.HasOne("coolblue_assesment.Models.ProductType", "ProductType")
                         .WithMany("Products")
-                        .HasForeignKey("ProductTypeid")
+                        .HasForeignKey("productTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

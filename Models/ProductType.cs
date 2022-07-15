@@ -1,6 +1,8 @@
+using System.Xml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,7 +21,7 @@ namespace coolblue_assesment.Models
 
     public class ProductType
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }
 
         [Required]
@@ -28,8 +30,8 @@ namespace coolblue_assesment.Models
         [Required]
         public bool canBeInsured { get; set; }
 
-        public ProductTypeEnum productTypeEnum  { get; set; }
+        public ProductTypeEnum? productTypeEnum  { get; set; }
 
-        public List<Product>? Products {get; set;}
+        public ICollection<Product> Products {get; set;}
     }
 }

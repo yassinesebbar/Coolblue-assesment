@@ -15,9 +15,9 @@ namespace coolblue_assesment.Data
         {
             _context = context;
         }
-        public async Task<ProductType?> GetProductTypeById(int id)
+        public ProductType? GetProductTypeById(int id)
         {
-            return await _context.ProductTypes.FirstOrDefaultAsync(p => p.id == id);
+            return _context.ProductTypes.FirstOrDefault(p => p.id == id);
         }
     }
 }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coolblue-assessment", "coolblue-assessment\coolblue-assessment.csproj", "{F263923F-2765-4985-863E-ACE726D13AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coolblue-assessment.Test", "coolblue-assessment.Test\coolblue-assessment.Test.csproj", "{A00DA774-5450-45EA-9E15-BAFB2F01F28D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F263923F-2765-4985-863E-ACE726D13AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F263923F-2765-4985-863E-ACE726D13AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F263923F-2765-4985-863E-ACE726D13AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F263923F-2765-4985-863E-ACE726D13AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00DA774-5450-45EA-9E15-BAFB2F01F28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00DA774-5450-45EA-9E15-BAFB2F01F28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00DA774-5450-45EA-9E15-BAFB2F01F28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00DA774-5450-45EA-9E15-BAFB2F01F28D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D42FC1B-CCA7-47A6-879C-4D23C4BD7C99}
+	EndGlobalSection
+EndGlobal

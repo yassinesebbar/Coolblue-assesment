@@ -8,7 +8,6 @@ namespace coolblue_assesment.Data
 {
     public interface IProductRepo
     {
-        Task<Product?> GetProductById(int id);
-         
+        Product? GetProductById(int id);
     }
 }

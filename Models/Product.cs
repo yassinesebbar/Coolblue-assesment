@@ -18,6 +18,6 @@ namespace coolblue_assesment.Models
         public decimal salesPrice { get; set; }
 
         [Required]
-        public ProductType? ProductType {get; set;}
+        public ProductType ProductType {get; set;}
     }
 }

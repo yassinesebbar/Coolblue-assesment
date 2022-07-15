@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace coolblue_assesment.Models
 {
+
+    public enum ProductTypeEnum
+    {
+        Laptops,
+        Smartphones,
+        DigitalCameras,
+        SlrCameras,
+        MP3Players,
+        WashingMachines,
+    }
+
     public class ProductType
     {
         [Key]
@@ -16,6 +27,8 @@ namespace coolblue_assesment.Models
 
         [Required]
         public bool canBeInsured { get; set; }
+
+        public ProductTypeEnum productTypeEnum  { get; set; }
 
         public List<Product>? Products {get; set;}
     }

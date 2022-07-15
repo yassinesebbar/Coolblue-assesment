@@ -9,10 +9,10 @@ namespace coolblue_assesment.Dtos
     public class InsuranceCostReadDto
     {
         [Key]
-        public int productId { get; set; }
+        public int id { get; set; }
 
         [Required]
-        public string? productName  {get; set;}
+        public string? name  {get; set;}
 
         [Required]
         public decimal salesPrice {get; set;}
@@ -21,6 +21,6 @@ namespace coolblue_assesment.Dtos
         public bool canBeInsured {get; set;}
 
         [Required]
-        public decimal InsuranceCost {get; set;}   
+        public decimal insuranceCost {get; set;}   
     }
 }

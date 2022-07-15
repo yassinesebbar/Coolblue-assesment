@@ -23,6 +23,10 @@ namespace coolblue_assesment.Data
 
         public bool startBulkImport(String productJsonFile ,String productTypeJsonFile)
         {
+            // check if the database has been populated
+            Product? product = _context.Products.FirstOrDefault();
+            if (product != null) return false;
+
             FileStream openStreamProducts = File.OpenRead(productJsonFile);
             FileStream openStreamProductTypes = File.OpenRead(productTypeJsonFile);            
 
@@ -60,6 +64,8 @@ namespace coolblue_assesment.Data
             this.productTypes = JsonSerializer.Deserialize<List<ProductType>>(openStreamProductTypes);
 
             if (this.productTypes == null || productTypes.Count < 1){return false;}
+
+            // Assign enum to product type
 
             this.productTypes.ForEach( delegate(ProductType productType) {
                 if(productType != null && productType.name != null){
@@ -114,6 +120,8 @@ namespace coolblue_assesment.Data
         {
             products = JsonSerializer.Deserialize<List<Product>>(openStreamProducts);
             if (this.products == null || products.Count < 1){return false;}
+
+            // assign product type to product
 
             this.products.ForEach( delegate(Product product) {
                 int? productTypeId = product.productTypeId;
